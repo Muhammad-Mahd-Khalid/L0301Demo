@@ -5,9 +5,7 @@ package org.example;
 public class Main {
 
   public static void main(String[] args) {
-    Person p1 = new Person();
-    p1.name = "Bob Builder";
-    p1.age = 27;
+    Person p1 = new Person("Bob Builder", 27);
     Student s1 = new Student();
     s1.name = "Bob Builder";
     s1.age = 27;
@@ -15,7 +13,7 @@ public class Main {
     Person[] people = {p1, s1};
 
     for (Person p : people) {
-      System.out.println(p.name);
+      System.out.println(p.getName());
       System.out.println(p);
       if (p instanceof Student) {
         System.out.println(((Student) p).name);

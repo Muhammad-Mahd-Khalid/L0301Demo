@@ -1,20 +1,25 @@
 package org.example;
 
 public class Person {
-  public String name;
-  public int age;
+  private String name;
+  private int age;
+
+  public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
 
   public static void main(String[] args) {
-    Person p = new Person();
-    p.name = "Alice Aardvark";
-    p.age = 1;
+    Person p = new Person("Alice Aardvark", 1);
     System.out.println(p.name);
     System.out.println(p.age);
     System.out.println(p);
 
-    Person p2 = new Person();
-    p2.name = new String("Alice Aardvark");
-    p2.age = 1;
+    Person p2 = new Person("Alice Aardvark", 1);
     System.out.println(p2 == p);
     System.out.println(p2.equals(p));
   }
