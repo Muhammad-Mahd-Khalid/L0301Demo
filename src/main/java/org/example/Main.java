@@ -21,5 +21,7 @@ public class Main {
         System.out.println(((Student) p).name);
       }
     }
+
+    System.out.println(s1.equals(p1));
   }
 }

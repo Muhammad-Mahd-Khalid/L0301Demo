@@ -12,4 +12,16 @@ public class Student extends Person {
     rslt += " [stu#: " + studentNumber + "]";
     return rslt;
   }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (!super.equals(obj)) {
+      return false;
+    }
+    else if (obj instanceof Student) {
+      return studentNumber.equals(((Student) obj).studentNumber);
+    }
+    return false;
+  }
+
 }
