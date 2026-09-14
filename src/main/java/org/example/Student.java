@@ -2,9 +2,16 @@ package org.example;
 
 public class Student extends Person {
 
-  public String name;
-  public int age;
-  public String studentNumber;
+  private String studentNumber = "Not Assigned";
+
+  public Student(String name, int age) {
+    super(name, age);
+  }
+
+  public Student(String name, int age, String studentNumber) {
+    super(name, age);
+    this.studentNumber = studentNumber;
+  }
 
   @Override
   public String toString() {
