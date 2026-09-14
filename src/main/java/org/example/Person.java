@@ -21,7 +21,7 @@ public class Person {
 
   @Override
   public String toString() {
-    return this.name + "(" + age + ")";
+    return this.name + " (age:" + age + ")";
   }
 
   @Override
