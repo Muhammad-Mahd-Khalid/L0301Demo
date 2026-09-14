@@ -17,6 +17,9 @@ public class Main {
     for (Person p : people) {
       System.out.println(p.name);
       System.out.println(p);
+      if (p instanceof Student) {
+        System.out.println(((Student) p).name);
+      }
     }
   }
 }
