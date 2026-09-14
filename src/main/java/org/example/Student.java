@@ -1,6 +1,6 @@
 package org.example;
 
-public class Student extends Person {
+public class Student extends Person implements Comparable<Student> {
 
   private String studentNumber = "Not Assigned";
 
@@ -31,4 +31,8 @@ public class Student extends Person {
     return false;
   }
 
+  @Override
+  public int compareTo(Student o) {
+    return studentNumber.compareTo(o.studentNumber);
+  }
 }
