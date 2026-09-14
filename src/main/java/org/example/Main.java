@@ -26,7 +26,7 @@ public class Main {
         students.add((Student) p);
     }
 
-    Arrays.sort(students.toArray());
+    Collections.sort(students);
     System.out.println(students);
   }
 }
