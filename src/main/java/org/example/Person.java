@@ -30,6 +30,6 @@ public class Person {
       return false;
     }
     Person other = (Person) obj;
-    return other.name == name && other.age == age;
+    return other.name.equals(name) && other.age == age;
   }
 }
