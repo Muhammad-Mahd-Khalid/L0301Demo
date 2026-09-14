@@ -5,14 +5,18 @@ package org.example;
 public class Main {
 
   public static void main(String[] args) {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    System.out.printf("Hello and welcome!");
+    Person p1 = new Person();
+    p1.name = "Bob Builder";
+    p1.age = 27;
+    Student s1 = new Student();
+    s1.name = "Bob Builder";
+    s1.age = 27;
+    s1.studentNumber = "bob123";
+    Person[] people = {p1, s1};
 
-    for (int i = 1; i <= 5; i++) {
-      //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-      // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-      System.out.println("i = " + i);
+    for (Person p : people) {
+      System.out.println(p.name);
+      System.out.println(p);
     }
   }
 }
