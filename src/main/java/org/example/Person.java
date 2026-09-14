@@ -11,10 +11,25 @@ public class Person {
     System.out.println(p.name);
     System.out.println(p.age);
     System.out.println(p);
+
+    Person p2 = new Person();
+    p2.name = new String("Alice Aardvark");
+    p2.age = 1;
+    System.out.println(p2 == p);
+    System.out.println(p2.equals(p));
   }
 
   @Override
   public String toString() {
     return this.name + "(" + age + ")";
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (!(obj instanceof Person)) {
+      return false;
+    }
+    Person other = (Person) obj;
+    return other.name == name && other.age == age;
   }
 }
