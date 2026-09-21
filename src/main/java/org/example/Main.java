@@ -11,7 +11,7 @@ public class Main {
 
   public static void main(String[] args) {
     Student s0 = new Student("Dave Developer", 23, "dav1");
-    Person p1 = new Person("Alice Aardvark", 16);
+    Person p1 = new Person("Alice Aardvark", 19);
     Student s1 = new Student("Bob Builder", 27, "bob123");
     Student s2 = new Student("Carol Coder", 42, "car5");
     Person[] people = {s0, p1, s1, s2};
